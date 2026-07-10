@@ -79,7 +79,7 @@ export default function Home() {
 
     setLoading(true);
     try {
-      const response = await fetch(`${API_URL}/calculate`, {
+      const response = await fetch(`${API_URL}calculate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
